@@ -1,10 +1,15 @@
-numero=int(input("Ingrese un numero entero: "))
+while True:
+    try:
+        numero=int(input("Ingrese un numero entero: "))
 
-calculo=numero%2
+        calculo=numero%2
 
-if calculo==0:
+        if calculo==0:
 
-    print("Es par")
+            print("Es par")
 
-else:
-    print("Es impar")
+        else:
+            print("Es impar")
+            break
+    except ValueError:
+        print("ingrese un numero entero porfavor")
